@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <style>
+        body {
+            background-color: #000;
+            color: white;
+            margin: auto;
+            text-align: center;
+        }
+
+        .container {
+            margin: auto;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        .ring {
+            width: 200px;
+            height: 200px;
+            border: 0px solid #000;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .ring:nth-child(1) {
+            border-left-width: 8px;
+            border-color: rgb(255, 255, 255);
+            animation: rotatel 2s linear infinite;
+        }
+
+        .ring:nth-child(2) {
+            border-top-width: 8px;
+            border-color: rgb(10, 237, 63);
+            animation: rotatel 2s linear infinite;
+        }
+
+        .ring:nth-child(3) {
+            border-bottom-width: 8px;
+            border-color: rgb(236, 10, 10);
+            animation: rotatel 2s linear infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <p>Loading...</p>
+    </div>
+</body>
+
+</html>
